@@ -1,12 +1,13 @@
-// assign pin num
+// Assign pin num
 int right_pin = 6;
 int left_pin = 7;
 int forward_pin = 10;
 int reverse_pin = 9;
 
-// duration for output
+// Duration for output
 int time = 50;
-// initial command
+
+// Initial command
 int command = 0;
 
 void setup() {
@@ -18,14 +19,15 @@ void setup() {
 }
 
 void loop() {
-    //receive command
+
+    // Receive command
     if (Serial.available() > 0){
         command = Serial.read();
     }
     else{
         reset();
     }
-    send_command(command,time);
+    send_command(command, time);
 }
 
 void right(int time){
@@ -82,21 +84,22 @@ void reset(){
 void send_command(int command, int time){
     switch (command){
 
-        //reset command
+        // Reset command
         case 0: reset(); break;
 
-        // single command
+        // Single command
         case 1: forward(time); break;
         case 2: reverse(time); break;
         case 3: right(time); break;
         case 4: left(time); break;
 
-        //combination command
+        // Combination command
         case 6: forward_right(time); break;
         case 7: forward_left(time); break;
         case 8: reverse_right(time); break;
         case 9: reverse_left(time); break;
 
+        // Error message
         default: Serial.print("Invalid Command!\n");
     }
 }
