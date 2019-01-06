@@ -6,6 +6,18 @@ A more tutorial-like, DIY-focused and well-documented fork of https://github.com
 
 ![rangee](rangee.jpg)
 
+## Dependencies
+### Hardware
+    - Raspberry Pi version 2 or higher (2B used here)
+    - Arduino Uno R3
+    - Raspberry pi compatible camera supporting the `picamera` library (Python)
+    - HC-SR04 ultrasonic sensor
+
+### Software
+    - Python 3 via Conda, `pip`
+    - C++, `g++`
+
+Further dependencies are easily installed via Conda/pip requirements text files.
 
 ---
 
@@ -28,6 +40,11 @@ car receive commands that where previously sent to the controller in real time.
 
 ### openrcpp-lanes
 The _lanes_ application subset focuses on lane detection for the car.
+
+---
+
+### openrcpp-sonic
+The _sonic_ module is used for ultrasonic sensor data evaluation.
 
 ---
 
