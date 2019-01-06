@@ -1,5 +1,6 @@
 ## openrcpp
 ![ubuntu](https://img.shields.io/badge/Ubuntu-18.04.1-692242.svg)
+![hypriot](https://img.shields.io/badge/HypriotOS-1.9.0-black.svg)
 ![python](https://img.shields.io/badge/Python-3.6.5-yellow.svg)
 ![cpp](https://img.shields.io/badge/C++-17-blue.svg)
 
