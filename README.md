@@ -1,5 +1,6 @@
 ## OpenRC++
-!(rangee)[rangee.jpg]
+
+![rangee](rangee.jpg)
 
 ---
 
@@ -12,6 +13,7 @@ The project is divided into different modules.
 Controlling the RC module is done by this software module called _control_.
 The simple goal is to access the RC emitter through hardware and let the
 car receive commands that where previously sent to the controller in real time.
+
 ![arduino](arduino.jpg)
 
 #### References
@@ -36,4 +38,5 @@ to the workstation where the post-processing is done.
 Computer vision and path prediction are done by the _vision_ application subset.
 Image processing methods that go beyond eliminating noise or extracting features
 for machine learning can be found in separate modules.
-!(raspi)[raspi.jpg]
+
+![raspi](raspi.jpg)
