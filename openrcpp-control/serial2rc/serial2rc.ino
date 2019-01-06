@@ -1,3 +1,6 @@
+// Define constants
+long serial_clock = 115200;
+
 // Assign pin num
 int right_pin = 6;
 int left_pin = 7;
@@ -15,7 +18,7 @@ void setup() {
     pinMode(left_pin, OUTPUT);
     pinMode(forward_pin, OUTPUT);
     pinMode(reverse_pin, OUTPUT);
-    Serial.begin(115200);
+    Serial.begin(serial_clock);
 }
 
 void loop() {

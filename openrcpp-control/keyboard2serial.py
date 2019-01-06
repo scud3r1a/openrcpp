@@ -1,14 +1,16 @@
+SERIAL_MOUNT_POINT = "/dev/ttyACM0"
+SERIAL_CLOCK = 115200
+
 import serial
 import pygame
 from pygame.locals import *
 
-class RCTest(object):
+class Keyboard2SerialAdapter(object):
 
     def __init__(self):
         pygame.init()
         pygame.display.set_mode((250, 250))
-        self.ser = serial.Serial("/dev/tty.usbmodem1421", 115200, timeout=1)    # mac
-        # self.ser = serial.Serial("/dev/ttyACM0", 115200, timeout=1)           # linux
+        self.ser = serial.Serial(SERIAL_MOUNT_POINT, SERIAL_CLOCK, timeout=1)
         self.send_inst = True
         self.steer()
 
@@ -64,6 +66,5 @@ class RCTest(object):
                 elif event.type == pygame.KEYUP:
                     self.ser.write(chr(0).encode())
 
-
 if __name__ == '__main__':
-    RCTest()
+    Keyboard2SerialAdapter()
