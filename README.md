@@ -6,7 +6,7 @@ Open Self-Driving RC Car Project Platform
 ![python](https://img.shields.io/badge/Python-3.6.5-yellow.svg)
 ![cpp](https://img.shields.io/badge/C++-17-blue.svg)
 
-A more tutorial-like, DIY-focused and well-documented *fork of https://github.com/hamuchiwa/AutoRCCar*.
+A more tutorial-like, DIY-focused and well-documented **fork of https://github.com/hamuchiwa/AutoRCCar**.
 
 ![rangee](img/rangee.jpg)
 
