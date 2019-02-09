@@ -124,11 +124,7 @@ for machine learning can be found in separate modules.
 
 ---
 
-## References
-
-Original video:
-<a href="http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
-" target="_blank"><img src="http://img.youtube.com/vi/BBwEF6WBUQs/0.jpg" width="360" height="240" border="10" /></a>
-
+### References
 - https://github.com/hamuchiwa/AutoRCCar
 - https://www.instructables.com/id/Python-Arduino-CarControl-v03/
+- http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
