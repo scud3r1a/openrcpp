@@ -13,6 +13,7 @@ A more tutorial-like, DIY-focused and well-documented **fork of https://github.c
 
 
 ## Dependencies
+
 ### Hardware
 - Raspberry Pi version 2 or higher (2B used here)
 - Arduino Uno R3
@@ -59,23 +60,23 @@ we have to use a custom interpretation of the sensor input (towards the system),
 In this project I used an RC car from _HSP Himoto_, as did the author of the original article.
 Basically, most RC cars should work but it is necessary that the voltage supplied through the
 Arduino connectors is high enough to actually trigger RC actions as replacement of the original
-batteries. The size of the RC car should at least be _1:24_ of the original size of the car,
+batteries. The size of the RC car should at least be _1:24_ compared to the original size of the car,
 preferably bigger. Furthermore, the shape of the car should make it possible that hardware
 is placed on top of it (at least the Raspberry Pi with a case).
 
 The exact wiring of the RC module and the Arduino is described under _Modules - openrcpp-control - Wiring_.
 
-
+---
 
 ## Modules
-The project is divided into different modules.
-
----
+The project is divided into different modules:
 
 ### openrcpp-control
 Controlling the RC module is done by this software module called _control_.
-The simple goal is to access the RC emitter through hardware and let the
-car receive commands that where previously sent to the controller in real time.
+The simple goal is to access the RC emitter and let the
+car receive commands that where previously sent to the controller in real time -
+inspired by concepts like the following:
+https://www.instructables.com/id/Python-Arduino-CarControl-v03/.
 
 ![arduino](img/arduino.jpg)
 
@@ -101,11 +102,6 @@ In my example, the wiring has to look like the following:
 
 ---
 
-### openrcpp-lanes
-The _lanes_ application subset focuses on lane detection for the car.
-
----
-
 ### openrcpp-sonic
 The _sonic_ module is used for ultrasonic sensor data evaluation.
 
@@ -125,3 +121,14 @@ Image processing methods that go beyond eliminating noise or extracting features
 for machine learning can be found in separate modules.
 
 ![raspi](img/raspi.jpg)
+
+---
+
+## References
+
+Original video:
+<a href="http://www.youtube.com/watch?feature=player_embedded&v=BBwEF6WBUQs
+" target="_blank"><img src="http://img.youtube.com/vi/BBwEF6WBUQs/0.jpg" width="360" height="240" border="10" /></a>
+
+- https://github.com/hamuchiwa/AutoRCCar
+- https://www.instructables.com/id/Python-Arduino-CarControl-v03/

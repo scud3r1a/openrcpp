@@ -1,4 +1,3 @@
-
 from socket import *
 import time
 import RPi.GPIO as GPIO
